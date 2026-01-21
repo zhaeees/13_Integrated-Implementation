@@ -51,7 +51,11 @@ h1 {
 .btn.present.active{background: rgba(194, 218, 243, 0.836);}
 .btn.late.active{background: #ffead0b9; }
 .btn.absent.active{background: #fdcacab2;}
-
+/* hover */
+.btn:hover{
+  background: rgb(134, 134, 167);
+  color: #fff;
+}
 
 .list-wrap {
   width: 70%;
@@ -115,4 +119,5 @@ h1 {
 
 .status.absent {
   background: #fdcaca;
+
 }
