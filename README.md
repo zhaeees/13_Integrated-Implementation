@@ -8,3 +8,15 @@
  - style.css        /* UI 스타일 */
  - script.js        /* 메인 로직 */
  - server-data.js   /* 서버 데이터 시뮬레이션 */
+
+### 실행 절차
+1. 프로젝트 파일 전체를 다운로드합니다.
+2. 아래 파일들이 같은 폴더에 있는지 확인합니다.
+ 
+- index.html
+- style.css
+- script.js
+- server-data.js
+
+3. index.html 파일을 브라우저(Chrome 권장)에서 실행합니다.
+4. 학생 데이터가 화면에 정상적으로 출력되는지 확인합니다.
