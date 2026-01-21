@@ -4,27 +4,24 @@
  외부 시스템에서 제공되는 데이터를 내부 웹 프로그램과 연결하여 웹화면에 구현하는 예제입니다. 
  
 ### 파일구성 
- - `index.html`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  /* 화면 구조 */
- - `style.css`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  /* UI 스타일 */
- - `script.js`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  /* 메인 로직 */
- - `server-data.js`&nbsp;&nbsp;  /* 외부 학생 관리 서버에서 제공하는 학생 데이터 */
+ - `index.html`&nbsp; &nbsp; // 화면 구조 
+ - `style.css`&nbsp; &nbsp; // UI 스타일 
+ - `script.js`&nbsp; &nbsp; // 메인 로직 
+ - `server-data.js`&nbsp; &nbsp; // 외부 학생 관리 서버에서 제공하는 학생 데이터
 
 ### 실행 절차
 1. 프로젝트 파일 전체를 다운로드합니다.
-2. 아래 파일들이 같은 폴더에 있는지 확인합니다. 
-  - index.html
-  - style.css
-  - script.js
-  - server-data.js
-3. `index.html` 파일을 브라우저(Chrome 권장)에서 실행합니다.
-4. 학생 데이터가 화면에 정상적으로 출력되는지 확인합니다.
+2. 아래 파일들이 같은 폴더에 있는지 확인합니다.  
+    `index.html`   `style.css` `script.js`  `server-data.js`  
+4. `index.html` 파일을 브라우저(Chrome 권장)에서 실행합니다.
+5. 학생 데이터가 화면에 정상적으로 출력되는지 확인합니다.
 
 # 시험 요구사항 설명
 
 ## 외부 서버는 무엇인가?
-외부 서버는 현재 웹 페이지`index.html`와는 다른 위치에서 데이터를 제공하는 시스템을 의미합니다. 주로 데이터베이스와 연결되어 있으며, 요청(Request)에 따라 필요한 데이터를 응답(Response)으로 전달합니다.
-실제환경에서는 사용자 정보, 학생 목록, 상품 정보, 예약, 주문, 상태 데이터 등의 데이터들을 외부서버에서 받아옵니다.
-이 프로젝트에서는 실제 서버를 사용하지 않고, `server-data.js` 파일을 외부 서버 역할로 가정하여 구현하였습니다.
+외부 서버는 현재 웹 페이지`index.html`와는 다른 위치에서 데이터를 제공하는 시스템을 의미합니다.  
+주로 데이터베이스와 연결되어 있으며, 요청(Request)에 따라 필요한 데이터를 응답(Response)으로 전달합니다. 실제환경에서는 사용자 정보, 학생 목록, 상품 정보, 예약, 주문, 상태 데이터 등의 데이터들을 외부서버에서 받아옵니다.  
+이 프로젝트에서는 실제 서버를 사용하지 않고, `server-data.js` 파일을 외부 서버 역할로 가정하여 구현하였습니다.  
 실제 서버 대신 서버에서 내려오는 데이터 구조를 미리 정의하였고 html에서 <script src="server-data.js"></script> 태그를 통해 파일을 불러와 시물레이션 한것입니다.
 
 ## 어떤 데이터가 연계데이터인가?
