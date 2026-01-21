@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>출석관리 프로그램</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="attend-progrem">
+    <h1>출석관리 프로그램</h1>
+
+    <!-- 필터버튼 -->
+    <div class="filter">
+      <button data-filter="전체" class="btn active">전체</button>
+      <button data-filter="출석" class="btn present">출석</button>
+      <button data-filter="지각" class="btn late">지각</button>
+      <button data-filter="결석" class="btn absent">결석</button>
+    </div>
+    <div class="list-wrap">
+      <!-- 인원수 -->
+      <div class="personnel" id="personnel">총 몇명</div>
+      <!-- 학생카드 -->
+      <div id="studentList" class="grid-list"></div>
+    </div>
+  </div>
+  <!-- 서버 데이터 -->
+  <script src="server-data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

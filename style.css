@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'SchoolSafetyRoundedSmile';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-R.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SchoolSafetyRoundedSmile';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{font-family: 'SchoolSafetyRoundedSmile';}
+.attend-progrem{
+  width: 80%; margin: 30px auto;
+}
+h1 {
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(185, 185, 211);
+}
+.filter{
+  width: 50%; margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-top: 20px;
+  
+}
+.btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  border: 1px solid rgb(211, 211, 228);
+  border-radius: 10px;
+  background: transparent;
+  font-size: 18px;
+  font-family: 'SchoolSafetyRoundedSmile';
+}
+.btn.active {
+  background: rgb(134, 134, 167);
+  color: #fff;
+}
+/* 상태별 버튼 active컬러 */
+.btn.present.active{background: rgba(194, 218, 243, 0.836);}
+.btn.late.active{background: #ffead0b9; }
+.btn.absent.active{background: #fdcacab2;}
+
+
+.list-wrap {
+  width: 70%;
+  margin: 30px auto;
+}
+/* 인원수 */
+.personnel{
+  display: flex; justify-content: end;
+  color: #777;
+}
+/* 학생카드 영역 */
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 12px;
+  padding-top: 10px;
+}
+
+/* js로 만들어진 class */
+.card {
+  border: 1px solid rgb(185, 185, 211);
+  padding: 15px;
+  border-radius: 8px;
+  background: #ffffffc9;
+}
+.card .id-code{
+  color: #666;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card .name {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 0;
+  color: #3b3b3b;
+}
+
+.card .class {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 15px;
+  display: inline;
+  padding: 5px 10px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/* 학생 상태별 배경색 */
+.status.present {
+  background: #b5d8fd; 
+}
+
+.status.late {
+  background: #ffead0; 
+}
+
+.status.absent {
+  background: #fdcaca;
+}
